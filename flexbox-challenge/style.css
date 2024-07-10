@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  background-color: rgb(20, 20, 117);
+  border: 2px solid rgb(7, 247, 147);
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* justify-content: space-around; */
+  height: 700px;
+  width: 500px;
+}
+
+.container1 {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid rgb(7, 247, 147);
+  padding: 10px;
+  flex: 0.2;
+}
+
+.container2 {
+  flex: 0.1;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(7, 247, 147);
+  margin-right: 20px;
+  
+}
+
+.container3 {
+  flex: 1;
+  border: 1px solid rgb(255, 0, 234);
+  margin-bottom: 10px;
+}
+
+.container4 {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  flex: 0.5;
+  gap: 10px;
+  border: 1px solid cyan;
+  margin-bottom: 20px;
+}
+
+.container4_1{
+  flex: 2;
+  border: 1px solid rgb(255, 0, 234);
+}
+
+.container4_2 {
+  flex: 1;
+  border: 1px solid rgb(255, 0, 234);
+}
