@@ -10,12 +10,11 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 function  getImageID(id){
-
   const imageString = '00' + id;
   return imageString.slice (-3);
 }
 
-async function showObtions(){
+async function showOptions(){
   let pokemonChosen = getRandomInt(3)
   const pokemons = await getPokemons();
 
@@ -42,29 +41,21 @@ async function getPokemons() {
 
 
 function checkChose(pokemonId, pokemonChosen, pokemonName){
+  let resultConatiner = document.getElementById('result');
   if(pokemonId == pokemonChosen){
-      let resultConatiner = document.getElementById('result');
       resultConatiner.innerHTML=`
-      <h1>YOU WON</h1>`
-      let pokemonNameContainer = document.getElementById('PokemonName');
-      pokemonNameContainer.innerHTML=`
-      <h2>Is ${pokemonName}</h2>`
-      let imageContainer = document.getElementById('image');
-      imageContainer.innerHTML=`
-      <img src= ${"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/" + pokemonChosen + ".png"}>
-      `
-  } else {
-    let resultConatiner = document.getElementById('result');
-    resultConatiner.innerHTML=`
-    <h1>YOU LOST</h1>`
-    let pokemonNameContainer = document.getElementById('PokemonName');
-    pokemonNameContainer.innerHTML=`
-    <h2>Is ${pokemonName}</h2>`
-    let imageContainer = document.getElementById('image');
-    imageContainer.innerHTML=`
-    <img src= ${"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/" + pokemonChosen + ".png"}>
-    `
-  }
+      <h1>YOU WON</h1>`}
+      else{
+      resultConatiner.innerHTML=`
+      <h1>YOU LOST</h1>`
+      }
+  
+  let pokemonNameContainer = document.getElementById('PokemonName');
+  pokemonNameContainer.innerHTML=`
+  <h2>Is ${pokemonName}</h2>`
+  let imageContainer = document.getElementById('image');
+  imageContainer.innerHTML=`
+  <img src= ${"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/" + pokemonChosen + ".png"}>`
 }
 
 function clean(){
