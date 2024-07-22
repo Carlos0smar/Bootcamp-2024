@@ -29,7 +29,7 @@ function App() {
     // Add the code for the divide function 
     e.preventDefault(); 
     setResult((result) => {
-      if(result === 0){
+      if(result === 0 || inputRef.current.value == null){
         return Number(inputRef.current.value);
       }
       return result / Number(inputRef.current.value)}); 
