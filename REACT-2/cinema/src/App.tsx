@@ -11,9 +11,7 @@ function App() {
 
   return (
     <>
-    {/* <div > */}
       <SeatGrid rows={5} columns={5}></SeatGrid>
-    {/* </div> */}
     </>
   )
 }

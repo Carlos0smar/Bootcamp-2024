@@ -35,8 +35,13 @@
 
 .card {
   /* padding: 2em; */
-  direction: flex;
-  
+  width: 170px;
+  /* height: 400px; */
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-flow: wrap;  
 }
 
 .read-the-docs {
