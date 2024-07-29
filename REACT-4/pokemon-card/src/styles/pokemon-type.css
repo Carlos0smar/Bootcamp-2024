@@ -1,0 +1,23 @@
+.poekonTypeFire{
+    background-color: rgb(250, 129, 15);
+}
+.poekonTypeWater{
+    background-color: rgb(15, 176, 250);
+}
+.poekonTypeGround{
+    background-color: rgb(153, 55, 55);
+}
+.poekonTypeGrass{
+    background-color: rgb(108, 165, 34);
+}
+.poekonType{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 0.4rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.poekonTypeDefault{
+    background-color: rgb(8, 37, 1);
+}

@@ -1,0 +1,68 @@
+.card{
+    position: relative;
+    min-width: 300px;
+    min-height: 200px;
+    padding: 0px !important;
+    background-color: rgb(236, 160, 47);
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.cardBackgroundFire{
+    background-color: orange;
+}
+.cardBackgroundWater{
+    background-color: lightblue;
+}
+.cardBackgroundGround{
+    background-color: brown;
+}
+.cardBackgroundGrass{
+    background-color: lightgreen;
+}
+.cardBackgroundFire{
+    background-color: orange;
+}
+
+.cardBackgroundDefault{
+    background-color: rgb(4, 48, 51);
+}
+
+.pokeballImage {
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.pokeballImage::before {
+    content: "";
+    background-image: url('pokeball-background.jpg');
+    background-size: cover;
+    background-position-x: 120px;
+    background-position-y: -40px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+  }
+.pokemonData{
+    display: flex;
+    flex: 2;
+    z-index: 1;
+    justify-content: center;
+    gap: 20px;
+    align-items: start;
+    padding-left: 10px;
+    flex-direction: column;
+}
+
+.pokemonImage{
+    flex: 1;
+    z-index: 1;
+}
+
+
