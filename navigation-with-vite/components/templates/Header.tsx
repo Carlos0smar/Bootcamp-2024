@@ -1,8 +1,10 @@
 import {Link} from 'react-router-dom';
+import React from 'react';
+
 type HeaderProps = {
     title: string;
-    links: { href: string; label: string }[];
-}
+    links: { href: string; text: string }[];
+};
 
 function Header({ title, links }: HeaderProps) {
     return (
@@ -10,9 +12,9 @@ function Header({ title, links }: HeaderProps) {
             <h1>{title}</h1>
             <nav>
                 <ul>
-                    {links.map((link) => (
+                    {links.map(link => (
                         <li key={link.href}>
-                            <a href={link.href}>{link.label}</a>
+                            <Link to={link.href}>{link.text}</Link>
                         </li>
                     ))}
                 </ul>
@@ -20,3 +22,5 @@ function Header({ title, links }: HeaderProps) {
         </header>
     )
 }
+
+export default Header;
